@@ -9,3 +9,46 @@
 body {
   font-family: Apercu;
 }
+
+/* ----------- NAV --------- */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 4vh 5vw;
+  font-size: 20px;
+}
+
+.nav-rogue {
+  font-family: Trash;
+}
+
+
+/* --------- HOME ----------- */
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/home-background.jpg);
+  background-position: 0 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-rogue {
+  font-family: trash;
+  font-size: 341px;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  color: #fff;
+}
+.home-title {
+  margin-top: 88vh;
+  position: relative;
+}
+.home-r {
+  height: 276px;
+  position: absolute;
+  bottom: 9vh;
+  left: 13vw;
+}
