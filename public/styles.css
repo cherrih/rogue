@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Trash;
+  src: url(fonts/Trash-Regular.ttf);
+}
+@font-face {
+  font-family: Apercu;
+  src: url(fonts/Apercu\ Medium.otf);
+}
+body {
+  font-family: Apercu;
+}
