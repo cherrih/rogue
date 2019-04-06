@@ -7,13 +7,14 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isHome: true,
-      isIndex: false
+      isHome: false,
+      isIndex: true
     }
     this.toggleIndex = this.toggleIndex.bind(this);
   }
   toggleIndex(e) {
     e.preventDefault();
+    console.log('index');
     this.setState({
       isIndex: !this.state.isIndex,
       isHome: !this.state.isHome

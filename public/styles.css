@@ -32,15 +32,18 @@ body {
   background-position: 0 35%;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
 }
 
-.home-rogue {
+.title-rogue {
   font-family: trash;
   font-size: 341px;
   position: absolute;
   bottom: 0;
   width: 100vw;
   text-align: center;
+}
+.home-rogue {
   color: #fff;
 }
 .home-title {
@@ -52,4 +55,14 @@ body {
   position: absolute;
   bottom: 9vh;
   left: 13vw;
+}
+
+/* ------------ index ------------ */
+.index-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+.index-x {
+  height: 28px;
 }

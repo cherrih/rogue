@@ -7,7 +7,7 @@ const Home = (props) => {
     <div className="home-container">
       <Nav toggleIndex={props.toggleIndex}/>
       <div className="home-title">
-        <div className="home-rogue">Vogue</div>
+        <div className="home-rogue title-rogue">Vogue</div>
         <img className="home-r" src="/images/r.png"/>
       </div>
     </div>
