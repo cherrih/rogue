@@ -38,12 +38,12 @@ body {
 .title-rogue {
   font-family: trash;
   font-size: 341px;
+  text-align: center;
   position: absolute;
   bottom: 0;
-  width: 100vw;
-  text-align: center;
 }
 .home-rogue {
+  width: 100vw;
   color: #fff;
 }
 .home-title {
@@ -65,4 +65,12 @@ body {
 }
 .index-x {
   height: 28px;
+}
+.index-rogue {
+  left: 27vw;
+}
+
+.index-title {
+  margin-top: 88vh;
+  position: relative;
 }

@@ -6,7 +6,10 @@ const Index = (props) => {
     <>{ props.isIndex ?
       <div className="index-container">
         <Nav isIndex={props.isIndex} toggleIndex={props.toggleIndex}/>
-        <div className="title-rogue">Rogue</div>
+        <div className="index-title">
+          <img className="home-r" src="/images/r.png"/>
+          <div className="title-rogue index-rogue">ogue</div>
+        </div>
       </div>
       : <></>
     }</>
