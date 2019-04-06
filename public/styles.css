@@ -32,7 +32,7 @@ body {
   background-position: 0 35%;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
+  position: relative;
 }
 
 .title-rogue {
@@ -46,10 +46,7 @@ body {
   width: 100vw;
   color: #fff;
 }
-.home-title {
-  margin-top: 88vh;
-  position: relative;
-}
+
 .home-r {
   height: 276px;
   position: absolute;
@@ -57,11 +54,12 @@ body {
   left: 13vw;
 }
 
-/* ------------ index ------------ */
+/* ------------ INDEX ------------ */
 .index-container {
   width: 100vw;
   height: 100vh;
   background-color: #fff;
+  position: relative;
 }
 .index-x {
   height: 28px;
@@ -69,8 +67,11 @@ body {
 .index-rogue {
   left: 27vw;
 }
-
-.index-title {
-  margin-top: 88vh;
-  position: relative;
+.index-topics-container {
+  font-family: Trash;
+  font-size: 46px;
+  padding-left: 6vw;
+}
+.index-topics {
+  padding-bottom: 2px;
 }

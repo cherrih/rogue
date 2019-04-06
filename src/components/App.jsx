@@ -8,7 +8,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       isHome: false,
-      isIndex: true
+      isIndex: true,
+      topics: ['About', 'Editor\'s Note', 'Contributors', 'Rogue Life', 'Big Issues, Low Pressue', 'Small Issues, High Pressue', 'Perspectives' ]
     }
     this.toggleIndex = this.toggleIndex.bind(this);
   }
@@ -25,7 +26,7 @@ class App extends React.Component {
     return (
       <>
         <Home isHome={this.state.isHome} toggleIndex={this.toggleIndex}/>
-        <Index isIndex={this.state.isIndex} toggleIndex={this.toggleIndex}/>
+        <Index isIndex={this.state.isIndex} toggleIndex={this.toggleIndex} topics={this.state.topics}/>
       </>
     )
   }
