@@ -6,6 +6,10 @@
   font-family: Apercu;
   src: url(fonts/Apercu\ Medium.otf);
 }
+:root {
+  --main-red: rgb(252, 13, 27);
+}
+
 body {
   font-family: Apercu;
   margin: 0;
@@ -22,7 +26,10 @@ body {
 .nav-rogue {
   font-family: Trash;
 }
-
+.nav-index:hover, .nav-rogue:hover {
+  color: var(--main-red);
+  cursor: pointer;
+}
 
 /* --------- HOME ----------- */
 .home-container {
@@ -74,4 +81,8 @@ body {
 }
 .index-topics {
   padding-bottom: 2px;
+}
+.index-topics:hover {
+  color: var(--main-red);
+  cursor: pointer;
 }
