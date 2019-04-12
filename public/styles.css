@@ -86,3 +86,11 @@ body {
   color: var(--main-red);
   cursor: pointer;
 }
+
+/* ------- TRASH ------- */
+
+.trash-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
