@@ -19,7 +19,7 @@ body {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  padding: 4vh 5vw;
+  padding: 4vh 5vw 2vh;
   font-size: 20px;
 }
 

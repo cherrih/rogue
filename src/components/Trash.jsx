@@ -40,7 +40,7 @@ class Trash extends React.Component {
       restitution: 0.9,
       angle: Math.PI * 0.15,
     })
-    let tampon = Bodies.circle(w/2 - 1, 0, 50, {
+    let tampon = Bodies.circle(w/2 - 1, 0, 80, {
       render: {
         sprite: {
           texture: '/images/tampon.png',
@@ -65,6 +65,16 @@ class Trash extends React.Component {
       render: {
         sprite: {
           texture: '/images/paper.png',
+          xScale: 0.1,
+          yScale: 0.1,
+        }
+      },
+      restitution: 0.9,
+    })
+    let lowfash = Bodies.circle(w/2 + 1, 0, 50, {
+      render: {
+        sprite: {
+          texture: '/images/lowfash.png',
           xScale: 0.1,
           yScale: 0.1,
         }
@@ -104,7 +114,8 @@ class Trash extends React.Component {
       tampon,
       bag,
       steak,
-      paper
+      paper,
+      lowfash
     ])
     World.add(engine.world, mouseConstraint);
     render.mouse = mouse;
