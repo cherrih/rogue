@@ -30,8 +30,7 @@ class App extends React.Component {
   showAbout() {
     setTimeout(() => {
       this.setState({
-        isSpam: true,
-        isHome: false
+        isSpam: true
       })
   }, 4000);
   }
@@ -40,9 +39,9 @@ class App extends React.Component {
     return (
       <div className="app-container">
         <Trash />
+        <SpamBox isSpam={this.state.isSpam}/>
         <Home isHome={this.state.isHome} toggleIndex={this.toggleIndex} topics={this.state.topics}/>
         <Index isIndex={this.state.isIndex} toggleIndex={this.toggleIndex} topics={this.state.topics}/>
-        <SpamBox isSpam={this.state.isSpam}/>
       </div>
     )
   }
