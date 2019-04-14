@@ -14,6 +14,7 @@ class Trash extends React.Component {
     const {w, h} = this.state;
     const reference = this.refs.trash
     const engine = Engine.create();
+    engine.world.gravity.y = 0.5;
     const render = Render.create({
       element: reference,
       engine: engine,
@@ -38,7 +39,6 @@ class Trash extends React.Component {
       },
       restitution: 0.9,
       angle: Math.PI * 0.15,
-      inertia: Infinity
     })
     const tampon = Bodies.circle(w/2 - 1, 0, 50, {
       render: {
@@ -49,7 +49,6 @@ class Trash extends React.Component {
         }
       },
       restitution: 0.9,
-      inertia: Infinity
     })
     const bag = Bodies.rectangle(w/2 + 1, 0, 100, 100, {
       render: {
@@ -61,7 +60,6 @@ class Trash extends React.Component {
       },
       angle: Math.PI * 0.15,
       restitution: 0.9,
-      inertia: Infinity
     })
 
     const wallOptions = {
