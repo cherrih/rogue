@@ -61,7 +61,7 @@ class Trash extends React.Component {
       angle: Math.PI * 0.15,
       restitution: 0.9,
     })
-    let paper = Bodies.circle(w/2, 0, 50, {
+    let paper = Bodies.circle(w/2, 0, 80, {
       render: {
         sprite: {
           texture: '/images/paper.png',
