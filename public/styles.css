@@ -25,6 +25,10 @@ body {
 
 .nav-rogue {
   font-family: Trash;
+  z-index: 2;
+}
+.nav-index {
+  z-index: 2;
 }
 .nav-index:hover, .nav-rogue:hover {
   color: var(--main-red);
@@ -93,4 +97,5 @@ body {
   width: 100vw;
   height: 100vh;
   position: fixed;
+  z-index: 1;
 }
