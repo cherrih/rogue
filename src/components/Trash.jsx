@@ -50,18 +50,18 @@ class Trash extends React.Component {
       },
       restitution: 0.9,
     })
-    let bag = Bodies.rectangle(w/2 + 1, 0, 100, 100, {
+    let bag = Bodies.rectangle(w/2 + 1, 0, 200, 200, {
       render: {
         sprite: {
-          texture: '/images/thankyoubag.png',
-          xScale: 0.5,
-          yScale: 0.5,
+          texture: '/images/bag.png',
+          xScale: 0.08,
+          yScale: 0.08,
         },
       },
       angle: Math.PI * 0.15,
       restitution: 0.9,
     })
-    let paper = Bodies.circle(w/2, 0, 80, {
+    let paper = Bodies.rectangle(w/2, 0, 200, 100, {
       render: {
         sprite: {
           texture: '/images/paper.png',
