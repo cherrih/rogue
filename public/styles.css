@@ -39,14 +39,14 @@ body {
 .home-container {
   width: 100vw;
   height: 100vh;
-  background-image: url(/images/home-background.jpg);
+  background-image: url(/images/rogue_cover.jpg);
   background-position: 0 35%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.title-rogue {
+/* .title-rogue {
   font-family: trash;
   font-size: 341px;
   text-align: center;
@@ -63,7 +63,7 @@ body {
   position: absolute;
   bottom: 9vh;
   left: 13vw;
-}
+} */
 
 /* ------------ INDEX ------------ */
 .index-container {
@@ -75,8 +75,14 @@ body {
 .index-x {
   height: 28px;
 }
-.index-rogue {
-  left: 27vw;
+.index-title {
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  width: 100vw;
+}
+.index-logo {
+  width: 70vw;
 }
 .index-topics-container {
   font-family: Trash;
