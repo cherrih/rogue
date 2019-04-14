@@ -39,6 +39,7 @@ class Trash extends React.Component {
       },
       restitution: 0.9,
       angle: Math.PI * 0.15,
+      id: 'matter-body-steak'
     })
     let tampon = Bodies.circle(w/2 - 1, 0, 80, {
       render: {
@@ -49,6 +50,7 @@ class Trash extends React.Component {
         }
       },
       restitution: 0.9,
+      id: 'matter-body-tampon'
     })
     let bag = Bodies.rectangle(w/2 + 1, 0, 200, 200, {
       render: {
@@ -60,6 +62,7 @@ class Trash extends React.Component {
       },
       angle: Math.PI * 0.15,
       restitution: 0.9,
+      id: 'matter-body-bag'
     })
     let paper = Bodies.rectangle(w/2, 0, 200, 100, {
       render: {
@@ -70,8 +73,9 @@ class Trash extends React.Component {
         }
       },
       restitution: 0.9,
+      id: 'matter-body-paper'
     })
-    let lowfash = Bodies.circle(w/2 + 1, 0, 50, {
+    let lowfash = Bodies.circle(w/2 + 1, 0, 100, {
       render: {
         sprite: {
           texture: '/images/lowfash.png',
@@ -80,6 +84,7 @@ class Trash extends React.Component {
         }
       },
       restitution: 0.9,
+      id: 'matter-body-lowfash'
     })
 
     const wallOptions = {
@@ -122,7 +127,7 @@ class Trash extends React.Component {
 
     Events.on(mouseConstraint, "mousedown", function(event) {
       // World.add(engine.world, Bodies.circle(150, 50, 30, { restitution: 0.7 }));
-      console.log('mouse')
+      console.log(mouseConstraint.body)
     });
     
   }
