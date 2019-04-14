@@ -33,8 +33,8 @@ class Trash extends React.Component {
       render: {
         sprite: {
           texture: '../../images/steak.png',
-          xScale: 0.4,
-          yScale: 0.4
+          xScale: 0.5,
+          yScale: 0.5
         }
       },
       restitution: 0.9,
@@ -44,8 +44,8 @@ class Trash extends React.Component {
       render: {
         sprite: {
           texture: '../../images/tampon.png',
-          xScale: 0.4,
-          yScale: 0.4,
+          xScale: 0.5,
+          yScale: 0.5,
         }
       },
       restitution: 0.9,
@@ -54,8 +54,8 @@ class Trash extends React.Component {
       render: {
         sprite: {
           texture: '../../images/thankyoubag.png',
-          xScale: 0.4,
-          yScale: 0.4,
+          xScale: 0.5,
+          yScale: 0.5,
         },
       },
       angle: Math.PI * 0.15,
