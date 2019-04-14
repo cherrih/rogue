@@ -16,7 +16,6 @@ class App extends React.Component {
   }
   toggleIndex(e) {
     e.preventDefault();
-    console.log('index');
     this.setState({
       isIndex: !this.state.isIndex,
       isHome: !this.state.isHome

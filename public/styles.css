@@ -40,7 +40,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-image: url(/images/rogue_cover.jpg);
-  background-position: 0 35%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -82,15 +82,17 @@ body {
   width: 100vw;
 }
 .index-logo {
-  width: 70vw;
+  width: 80vw;
 }
 .index-topics-container {
   font-family: Trash;
   font-size: 46px;
   padding-left: 6vw;
+  z-index: 2;
 }
 .index-topics {
   padding-bottom: 2px;
+  z-index: 2;
 }
 .index-topics:hover {
   color: var(--main-red);

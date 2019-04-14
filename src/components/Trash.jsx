@@ -29,10 +29,10 @@ class Trash extends React.Component {
     Render.run(render);
     Engine.run(engine);
     
-    const steak = Bodies.rectangle(w/2, 0, 100, 100, {
+    const steak = Bodies.rectangle(w/2, 0, 200, 100, {
       render: {
         sprite: {
-          texture: '../../images/steak.png',
+          texture: '/images/steak.png',
           xScale: 0.5,
           yScale: 0.5
         }
@@ -43,7 +43,7 @@ class Trash extends React.Component {
     const tampon = Bodies.circle(w/2 - 1, 0, 50, {
       render: {
         sprite: {
-          texture: '../../images/tampon.png',
+          texture: '/images/tampon.png',
           xScale: 0.5,
           yScale: 0.5,
         }
@@ -53,12 +53,22 @@ class Trash extends React.Component {
     const bag = Bodies.rectangle(w/2 + 1, 0, 100, 100, {
       render: {
         sprite: {
-          texture: '../../images/thankyoubag.png',
+          texture: '/images/thankyoubag.png',
           xScale: 0.5,
           yScale: 0.5,
         },
       },
       angle: Math.PI * 0.15,
+      restitution: 0.9,
+    })
+    const paper = Bodies.circle(w/2, 0, 50, {
+      render: {
+        sprite: {
+          texture: '/images/paper.png',
+          xScale: 0.1,
+          yScale: 0.1,
+        }
+      },
       restitution: 0.9,
     })
 
@@ -93,7 +103,8 @@ class Trash extends React.Component {
       mouse,
       tampon,
       bag,
-      steak
+      steak,
+      paper
     ])
     World.add(engine.world, mouseConstraint);
     render.mouse = mouse;
