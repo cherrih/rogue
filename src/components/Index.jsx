@@ -5,7 +5,7 @@ const Index = (props) => {
   return (
     <>{ props.isIndex ?
       <div className="index-container">
-        <Nav isIndex={props.isIndex} toggleIndex={props.toggleIndex}/>
+        <Nav isIndex={props.isIndex} toggleIndex={props.toggleIndex} topics={props.topics}/>
         <div className="index-topics-container">
           {props.topics.map(topic => <div className="index-topics" key="topic">{topic}</div>)}
         </div>

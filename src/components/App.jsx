@@ -26,7 +26,7 @@ class App extends React.Component {
     return (
       <>
         <Trash />
-        <Home isHome={this.state.isHome} toggleIndex={this.toggleIndex}/>
+        <Home isHome={this.state.isHome} toggleIndex={this.toggleIndex} topics={this.state.topics}/>
         <Index isIndex={this.state.isIndex} toggleIndex={this.toggleIndex} topics={this.state.topics}/>
       </>
     )

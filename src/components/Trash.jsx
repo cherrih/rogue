@@ -1,5 +1,5 @@
 import React from 'react';
-import { Engine, Render, World, Bodies, Mouse, MouseConstraint, Events, Composites } from 'matter-js';
+import { Engine, Render, World, Bodies, Mouse, MouseConstraint, Events, Body } from 'matter-js';
 
 class Trash extends React.Component {
   constructor(props) {
@@ -29,7 +29,7 @@ class Trash extends React.Component {
     Render.run(render);
     Engine.run(engine);
     
-    const steak = Bodies.rectangle(w/2, 0, 200, 100, {
+    let steak = Bodies.rectangle(w/2, 0, 200, 100, {
       render: {
         sprite: {
           texture: '/images/steak.png',
@@ -40,7 +40,7 @@ class Trash extends React.Component {
       restitution: 0.9,
       angle: Math.PI * 0.15,
     })
-    const tampon = Bodies.circle(w/2 - 1, 0, 50, {
+    let tampon = Bodies.circle(w/2 - 1, 0, 50, {
       render: {
         sprite: {
           texture: '/images/tampon.png',
@@ -50,7 +50,7 @@ class Trash extends React.Component {
       },
       restitution: 0.9,
     })
-    const bag = Bodies.rectangle(w/2 + 1, 0, 100, 100, {
+    let bag = Bodies.rectangle(w/2 + 1, 0, 100, 100, {
       render: {
         sprite: {
           texture: '/images/thankyoubag.png',
@@ -61,7 +61,7 @@ class Trash extends React.Component {
       angle: Math.PI * 0.15,
       restitution: 0.9,
     })
-    const paper = Bodies.circle(w/2, 0, 50, {
+    let paper = Bodies.circle(w/2, 0, 50, {
       render: {
         sprite: {
           texture: '/images/paper.png',
@@ -109,10 +109,10 @@ class Trash extends React.Component {
     World.add(engine.world, mouseConstraint);
     render.mouse = mouse;
 
-    // Events.on(mouseConstraint, "mousedown", function(event) {
-    //   // World.add(engine.world, Bodies.circle(150, 50, 30, { restitution: 0.7 }));
-    //   console.log('mouse')
-    // });
+    Events.on(mouseConstraint, "mousedown", function(event) {
+      // World.add(engine.world, Bodies.circle(150, 50, 30, { restitution: 0.7 }));
+      console.log('mouse')
+    });
     
   }
 
