@@ -5,7 +5,8 @@ const SpamBox = (props) => {
   return (
     <div className="spambox-container">
       {props.isSpam ?
-      <img src="/images/letterfromyourspambox.png"/> 
+      
+      <img src="/images/letterfromyourspambox.png" onClick={props.toggleAbout}/> 
       : <></>
       }
     </div>

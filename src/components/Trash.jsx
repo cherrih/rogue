@@ -41,6 +41,17 @@ class Trash extends React.Component {
       angle: Math.PI * 0.15,
       id: 'matter-body-steak'
     })
+    let imessage = Bodies.circle(w/2 - 1, 0, 80, {
+      render: {
+        sprite: {
+          texture: '/images/SMS.png',
+          xScale: 0.05,
+          yScale: 0.05,
+        }
+      },
+      restitution: 0.9,
+      id: 'matter-body-imessage'
+    })
     let tampon = Bodies.circle(w/2 - 1, 0, 80, {
       render: {
         sprite: {
@@ -120,15 +131,60 @@ class Trash extends React.Component {
       bag,
       steak,
       paper,
-      lowfash
+      lowfash,
+      imessage
     ])
     World.add(engine.world, mouseConstraint);
     render.mouse = mouse;
 
     Events.on(mouseConstraint, "mousedown", function(event) {
       // World.add(engine.world, Bodies.circle(150, 50, 30, { restitution: 0.7 }));
-      console.log(mouseConstraint.body)
+      console.log('click')
+      if (mouseConstraint.body) {
+        if (mouseConstraint.body.id === 'matter-body-paper') {
+          
+        }
+        // var nextFrame = 'player_' + player.animations.currentFrame + '.png';
+
+        // player.render.sprite.texture = nextFrame;
+        // Composite.setModified(world, true, false, true);
+      }
     });
+    // setTimeout(() => {
+    //   Body.setStatic(paper, true);
+    //   var py = 300 + 100 * Math.sin(engine.timing.timestamp * 0.002);
+    //   Body.setVelocity(paper, { x: paper.position.x, y: py - paper.position.y });
+    //   Body.setPosition(paper, { x: paper.position.x, y: py });
+
+    //   // Body.setVelocity(paper, { x: 0, y: 300 + 100 * Math.sin(engine.timing.timestamp * 0.002) - paper.position.y });
+    //   // Body.setAngularVelocity(paper, 0.02);
+    //   // Body.setPosition(paper, { x: w/2, y: h/2 })
+    //   // paper.render.sprite.texture = '/images/lowfash.png';
+    //   setTimeout(() => {
+    //     paper.render.sprite.texture = '/images/paper1.png';
+    //   }, 200)
+    //   setTimeout(() => {
+    //     paper.render.sprite.texture = '/images/paper2.png';
+    //   }, 400)
+    //   setTimeout(() => {
+    //     paper.render.sprite.texture = '/images/paper2.png';
+    //   }, 600)
+    //   setTimeout(() => {
+    //     paper.render.sprite.texture = '/images/paper4.png';
+    //   }, 800)
+    // }, 5000);
+
+    // var lastTime;
+    // function main() {
+    //   var now = Date.now();
+    //   var dt = (now - lastTime) / 1000.0;
+
+    //   update(dt);
+    //   render();
+
+    //   lastTime = now;
+    //   requestAnimFrame(main);
+    // };
     
   }
 
